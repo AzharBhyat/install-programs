@@ -6,17 +6,9 @@ NC='\033[0m'
 
 cd $HOME/Downloads
 
-wget "https://tlauncher.org/jar"
-printf "Unzipping Tlauncher...\n"
-unzip jar.zip -d /tlauncher
-
 printf "${BLUE}Installing OpenJdk & OpenJfx....${NC}\n"
 sudo apt-get install openjdk-8-jre -y
 sudo apt-get install openjfx -y
-
-sudo mv /tlauncher/TLauncher-2.72.jar $HOME/Desktop/Minecraft.jar
-sudo rm -r $HOME/Downloads/tlauncher
-sudo rm $HOME/Downloads/jar.zip
 
 printf "-------------------------------------\n"
 
